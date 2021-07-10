@@ -1,0 +1,34 @@
+{
+  "name": "@barelyhuman/date-utils",
+  "version": "0.0.0",
+  "description": "Simple collection of date utilities",
+  "main": "dist/index.js",
+  "module": "dist/esm/index.js",
+  "source": "source/index.js",
+  "author": {
+    "email": "ahoy@barelyhuman.de",
+    "url": "https://reaper.im",
+    "name": "Reaper"
+  },
+  "scripts": {
+    "watch": "wrap -w",
+    "build": "wrap",
+    "format": "wrap -f"
+  },
+  "wrap": {
+    "buble": false,
+    "external": [
+      "fs",
+      "path",
+      "child_process"
+    ]
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@barelyhuman/wrap": "^0.0.7-dev.2",
+    "@rollup/plugin-babel": "^5.3.0",
+    "rollup": "^2.53.0",
+    "standard": "^16.0.3"
+  }
+}
